@@ -1,14 +1,14 @@
 // https://github.com/FranckFreiburger/vue3-sfc-loader
 // https://github.com/FranckFreiburger/vue3-sfc-loader/blob/main/docs/examples.md#use-sfc-custom-blocks-for-i18n
-import ca from '/OBSEA/lang/ca.js';
-import en from '/OBSEA/lang/en.js';
-import es from '/OBSEA/lang/es.js';
+import ca from '/visortemporal3DMSM/lang/ca.js';
+import en from '/visortemporal3DMSM/lang/en.js';
+import es from '/visortemporal3DMSM/lang/es.js';
 // Load classes
 // SceneManager
-import SceneManager from "/OBSEA/Components/SceneManager.js"
+import SceneManager from "/visortemporal3DMSM/Components/SceneManager.js"
 window.SceneManager = SceneManager;
 // DataManager
-import DataManager from "/OBSEA/data/DataManager.js"
+import DataManager from "/visortemporal3DMSM/data/DataManager.js"
 window.DataManager = DataManager;
 
 // Declare translations
@@ -54,7 +54,7 @@ const { loadModule } = window['vue3-sfc-loader'];
 
 const app = Vue.createApp({
   components: {
-    'app-manager': Vue.defineAsyncComponent(() => loadModule('/OBSEA/Components/AppManager.vue', options)),
+    'app-manager': Vue.defineAsyncComponent(() => loadModule('/visortemporal3DMSM/Components/AppManager.vue', options)),
   },
   template: '<app-manager></app-manager>'
 });

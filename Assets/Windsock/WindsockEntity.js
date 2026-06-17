@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
-import { WindsockBehavior } from '/OBSEA/Assets/Windsock/WindsockBehavior.js'
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { WindsockBehavior } from '/visortemporal3DMSM/Assets/Windsock/WindsockBehavior.js'
 
 class WindsockEntity {
   
@@ -17,7 +17,7 @@ class WindsockEntity {
 
     const gltfLoader = new GLTFLoader();
     // objLoader.load('https://threejs.org/manual/examples/resources/models/windmill/windmill.obj', (root) => {
-    gltfLoader.load('/OBSEA/Assets/Windsock/windsock.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/Windsock/windsock.glb', (gltf) => {
       // GLTF scene
       this.root = gltf.scene;
   

@@ -1,14 +1,14 @@
 import * as THREE from 'three';
-import { OrbitControls } from '/OBSEA/lib/three.js/examples/jsm/controls/OrbitControls.js';
-//import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
-import { FBXLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/FBXLoader.js'
-import { RosaVentsEntity } from '/OBSEA/Assets/Orientation/RosaVentsEntity.js';
-// import { GUI } from '/OBSEA/lib/three.js/examples/jsm/libs/lil-gui.module.min.js';
+import { OrbitControls } from '/visortemporal3DMSM/lib/three.js/examples/jsm/controls/OrbitControls.js';
+//import { OBJLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/OBJLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { FBXLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/FBXLoader.js'
+import { RosaVentsEntity } from '/visortemporal3DMSM/Assets/Orientation/RosaVentsEntity.js';
+// import { GUI } from '/visortemporal3DMSM/lib/three.js/examples/jsm/libs/lil-gui.module.min.js';
 
 
 /* OCEAN
-/OBSEA/lib/three.js/examples/webgl_shaders_ocean.html
+/visortemporal3DMSM/lib/three.js/examples/webgl_shaders_ocean.html
 https://29a.ch/slides/2012/webglwater/
 https://29a.ch/sandbox/2012/terrain/
 https://www.tamats.com/work/bwr/

@@ -35,7 +35,7 @@
 
 
 <script>
-import LanguageSelector from '/OBSEA/Components/TopRight/LanguageSelector.vue'
+import LanguageSelector from '/visortemporal3DMSM/Components/TopRight/LanguageSelector.vue'
 
 
 export default {

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
-import { OrbitControls } from '/OBSEA/lib/three.js/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
-import { RosaVentsEntity } from '/OBSEA/Assets/Orientation/RosaVentsEntity.js';
+import { OrbitControls } from '/visortemporal3DMSM/lib/three.js/examples/jsm/controls/OrbitControls.js';
+import { OBJLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/OBJLoader.js';
+import { RosaVentsEntity } from '/visortemporal3DMSM/Assets/Orientation/RosaVentsEntity.js';
 
 function main() {
   const canvas = document.querySelector('#c');

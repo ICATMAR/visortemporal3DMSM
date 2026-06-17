@@ -1,26 +1,26 @@
 import * as THREE from 'three';
-import Stats from '/OBSEA/lib/three.js/examples/jsm/libs/stats.module.js';
-import { OrbitControls } from '/OBSEA/lib/three.js/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
-import { FBXLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/FBXLoader.js'
-import { RosaVentsEntity } from '/OBSEA/Assets/Orientation/RosaVentsEntity.js';
-import { SandEntity } from '/OBSEA/Assets/Terrain/SandEntity.js';
-import { SkyboxEntity } from '/OBSEA/Assets/Skybox/SkyboxEntity.js';
+import Stats from '/visortemporal3DMSM/lib/three.js/examples/jsm/libs/stats.module.js';
+import { OrbitControls } from '/visortemporal3DMSM/lib/three.js/examples/jsm/controls/OrbitControls.js';
+import { OBJLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/OBJLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { FBXLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/FBXLoader.js'
+import { RosaVentsEntity } from '/visortemporal3DMSM/Assets/Orientation/RosaVentsEntity.js';
+import { SandEntity } from '/visortemporal3DMSM/Assets/Terrain/SandEntity.js';
+import { SkyboxEntity } from '/visortemporal3DMSM/Assets/Skybox/SkyboxEntity.js';
 
-import * as FogShader from '/OBSEA/Assets/Terrain/FogShader.js'
-import { OceanEntity } from '/OBSEA/Assets/Ocean/OceanEntity.js';
-import { OBSEABuoyEntity } from '/OBSEA/Assets/OBSEABuoy/OBSEABuoyEntity.js';
-import { UPCBuoyEntity } from '/OBSEA/Assets/UPCBuoy/UPCBuoyEntity.js';
-import { OBSEAStationEntity } from '/OBSEA/Assets/OBSEAStation/ObseaStationEntity.js';
-import { OBSEABiotopEntity } from '/OBSEA/Assets/OBSEABiotop/OBSEABiotopEntity.js'
-import { OBSEACrawlerEntity } from '/OBSEA/Assets/OBSEACrawler/CrawlerEntity.js';
-//import { WindsockEntity } from '/OBSEA/Assets/Windsock/WindsockEntity.js';
-import { FlagEntity } from '/OBSEA/Assets/Flag/FlagEntity.js';
-import { CurrentEntity } from '/OBSEA/Assets/Current/CurrentEntity.js';
-import { TextMeshEntity } from '/OBSEA/Assets/TextMesh/TextMeshEntity.js';
+import * as FogShader from '/visortemporal3DMSM/Assets/Terrain/FogShader.js'
+import { OceanEntity } from '/visortemporal3DMSM/Assets/Ocean/OceanEntity.js';
+import { OBSEABuoyEntity } from '/visortemporal3DMSM/Assets/OBSEABuoy/OBSEABuoyEntity.js';
+import { UPCBuoyEntity } from '/visortemporal3DMSM/Assets/UPCBuoy/UPCBuoyEntity.js';
+import { OBSEAStationEntity } from '/visortemporal3DMSM/Assets/OBSEAStation/ObseaStationEntity.js';
+import { OBSEABiotopEntity } from '/visortemporal3DMSM/Assets/OBSEABiotop/OBSEABiotopEntity.js'
+import { OBSEACrawlerEntity } from '/visortemporal3DMSM/Assets/OBSEACrawler/CrawlerEntity.js';
+//import { WindsockEntity } from '/visortemporal3DMSM/Assets/Windsock/WindsockEntity.js';
+import { FlagEntity } from '/visortemporal3DMSM/Assets/Flag/FlagEntity.js';
+import { CurrentEntity } from '/visortemporal3DMSM/Assets/Current/CurrentEntity.js';
+import { TextMeshEntity } from '/visortemporal3DMSM/Assets/TextMesh/TextMeshEntity.js';
 
-import { OBSEADataRetriever } from '/OBSEA/data/OBSEADataRetriever.js'
+import { OBSEADataRetriever } from '/visortemporal3DMSM/data/OBSEADataRetriever.js'
 
 
 
@@ -222,7 +222,7 @@ class SceneManager{
 
     // Create image logo
     let expObseaImg = document.createElement("img");
-    expObseaImg.src = "/OBSEA/Assets/OBSEABanner.png";
+    expObseaImg.src = "/visortemporal3DMSM/Assets/OBSEABanner.png";
     expObseaImg.style['max-width'] = '40vw';
     expObseaImg.style['max-height'] = '130px';//'18%';
 
@@ -246,7 +246,7 @@ class SceneManager{
 
     // Create sponsors logos
     let sponsorsImg = document.createElement("img");
-    sponsorsImg.src = "/OBSEA/img/Logos.png";
+    sponsorsImg.src = "/visortemporal3DMSM/img/Logos.png";
     sponsorsImg.style['max-width'] = '100%';
     sponsorsImg.style['max-height'] = '20%';
     sponsorsImg.style.bottom = '10px';

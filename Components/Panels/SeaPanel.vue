@@ -136,7 +136,7 @@
 
 
 <script>
-import Knob from '/OBSEA/Components/Knob.vue';
+import Knob from '/visortemporal3DMSM/Components/Knob.vue';
 
 // TODO: Wave height tip: http://jsfiddle.net/Zu59F/
 

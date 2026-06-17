@@ -79,9 +79,9 @@
 
 
 <script>
-import DataTicker from '/OBSEA/Components/Bottom/DataTicker.vue';
-import CameraYoutube from "/OBSEA/Components/Bottom/CameraYoutube.vue"
-import TimeRangeBar from "/OBSEA/Components/Bottom/TimeRangeBar.vue"
+import DataTicker from '/visortemporal3DMSM/Components/Bottom/DataTicker.vue';
+import CameraYoutube from "/visortemporal3DMSM/Components/Bottom/CameraYoutube.vue"
+import TimeRangeBar from "/visortemporal3DMSM/Components/Bottom/TimeRangeBar.vue"
 
 export default {
   name:"BottomSection",

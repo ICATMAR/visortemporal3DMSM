@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 class UPCBuoyEntity {
 
@@ -8,7 +8,7 @@ class UPCBuoyEntity {
   constructor(scene, onload){
     // https://www.youtube.com/watch?v=6LA8vEB47Nk&ab_channel=DirkTeucher
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('/OBSEA/Assets/UPCBuoy/UPCBuoy.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/UPCBuoy/UPCBuoy.glb', (gltf) => {
       // GLTF scene
       const root = gltf.scene;
       // Fix frustrum culling

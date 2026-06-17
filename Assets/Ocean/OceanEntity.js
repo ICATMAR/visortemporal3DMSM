@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import { Vector3 } from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
-import {OceanVertShader, OceanFragShader} from '/OBSEA/Assets/Ocean/OceanShader.js';
-import { OceanParameters } from '/OBSEA/Assets/Ocean/OceanParams.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import {OceanVertShader, OceanFragShader} from '/visortemporal3DMSM/Assets/Ocean/OceanShader.js';
+import { OceanParameters } from '/visortemporal3DMSM/Assets/Ocean/OceanParams.js';
 
 class OceanEntity {
 
@@ -51,16 +51,16 @@ class OceanEntity {
     paramsTexture.needsUpdate = true;
 
     // Load normal texture for smaller waves that the geometry cannot capture
-    // let normalTexture = new THREE.TextureLoader().load('/OBSEA/Assets/Terrain/OceanNormal.png');
+    // let normalTexture = new THREE.TextureLoader().load('/visortemporal3DMSM/Assets/Terrain/OceanNormal.png');
     // normalTexture.wrapS = normalTexture.wrapT = THREE.RepeatWrapping;
 
     // Create video texture
     // https://blenderartists.org/t/animated-water-normal-map-tileable-looped/673140
-    // /OBSEA/lib/three.js/examples/?q=video#webgl_materials_video
+    // /visortemporal3DMSM/lib/three.js/examples/?q=video#webgl_materials_video
     // https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_video.html
     let videoEl = document.createElement("video");
     videoEl.loop = true; videoEl.crossOrigin = 'anonymous'; videoEl.playsInline = true; videoEl.muted = "muted";
-    videoEl.src = '/OBSEA/Assets/Terrain/OceanNormal.mp4';
+    videoEl.src = '/visortemporal3DMSM/Assets/Terrain/OceanNormal.mp4';
     videoEl.play();
     let normalTexture = new THREE.VideoTexture(videoEl);
     normalTexture.wrapS = normalTexture.wrapT = THREE.RepeatWrapping;
@@ -79,7 +79,7 @@ class OceanEntity {
     // Load ocean mesh
     let gltfLoader = new GLTFLoader();
 
-    gltfLoader.load('/OBSEA/Assets/Terrain/OceanSurfaceLR.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/Terrain/OceanSurfaceLR.glb', (gltf) => {
 
       // Define material and shaders
       let oceanMaterial = new THREE.ShaderMaterial({
@@ -128,7 +128,7 @@ class OceanEntity {
 
       // LEVEL OF DETAIL INCREASE WHEN HIGHER RESOLUTIONS ARE LOADED
       // Load next resolution and add
-      gltfLoader.load('/OBSEA/Assets/Terrain/OceanSurfaceMR.glb', (gltf) => {
+      gltfLoader.load('/visortemporal3DMSM/Assets/Terrain/OceanSurfaceMR.glb', (gltf) => {
         // Store the version
         this.oceanLOD.MR = gltf.scene.children[0];
         this.oceanTile = gltf.scene.children[0];
@@ -140,7 +140,7 @@ class OceanEntity {
         scene.add(gltf.scene);
         let midResScene = gltf.scene;
         // Load next resolution and add
-        gltfLoader.load('/OBSEA/Assets/Terrain/OceanSurfaceHR.glb', (gltf) => {
+        gltfLoader.load('/visortemporal3DMSM/Assets/Terrain/OceanSurfaceHR.glb', (gltf) => {
           this.oceanLOD.HR = gltf.scene.children[0];
           this.oceanTile = gltf.scene.children[0];
           this.oceanTile.material = oceanMaterial;

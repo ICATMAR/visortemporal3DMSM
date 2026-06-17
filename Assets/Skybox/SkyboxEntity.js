@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 class SkyboxEntity {
 
   constructor(scene){
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('/OBSEA/Assets/Skybox/skybox.glb', (gltf) => { // '../Assets/Skybox/skybox.glb'
+    gltfLoader.load('/visortemporal3DMSM/Assets/Skybox/skybox.glb', (gltf) => { // '../Assets/Skybox/skybox.glb'
       // GLTF scene
       const root = gltf.scene;
       // Scale

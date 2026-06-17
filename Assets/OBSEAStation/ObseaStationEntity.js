@@ -1,10 +1,10 @@
 import * as THREE from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 class OBSEAStationEntity {
   constructor(scene){
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('/OBSEA/Assets/OBSEAStation/OBSEAStation.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/OBSEAStation/OBSEAStation.glb', (gltf) => {
       // GLTF scene
       const root = gltf.scene;
       // Fix frustrum culling

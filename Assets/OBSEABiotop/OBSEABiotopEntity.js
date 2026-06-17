@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/visortemporal3DMSM/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
 
 
 class OBSEABiotopEntity {
@@ -11,14 +11,14 @@ class OBSEABiotopEntity {
     // Load mesh
     let gltfLoader = new GLTFLoader();
 
-    gltfLoader.load('/OBSEA/Assets/OBSEABiotop/biotop.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/OBSEABiotop/biotop.glb', (gltf) => {
 
 
       let biotop = gltf.scene.children[0];
 
       // Biotop AO texture
       const loader = new THREE.TextureLoader();
-      biotop.material.aoMap = loader.load('/OBSEA/Assets/OBSEABiotop/Textures/BiotopAmbientOcclusion.jpeg');
+      biotop.material.aoMap = loader.load('/visortemporal3DMSM/Assets/OBSEABiotop/Textures/BiotopAmbientOcclusion.jpeg');
       biotop.material.aoMapIntensity = 1;
       biotop.material.metalnessMap = null;
       biotop.material.color.multiplyScalar(0.8);

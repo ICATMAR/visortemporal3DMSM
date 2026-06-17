@@ -86,9 +86,9 @@
 
 
 <script>
-import DataStreamsBar from '/OBSEA/Components/Bottom/DataStreamsBar.vue';
+import DataStreamsBar from '/visortemporal3DMSM/Components/Bottom/DataStreamsBar.vue';
 // Import components
-import RangeSlider from '/OBSEA/Components/Bottom/RangeSlider.vue'
+import RangeSlider from '/visortemporal3DMSM/Components/Bottom/RangeSlider.vue'
 
 export default {
     name: "time-range-bar",
