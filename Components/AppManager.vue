@@ -22,7 +22,7 @@
 
 
     <!-- OBSEA Title -->
-    <img class="OBSEABanner" src="/visortemporal3DMSM/Assets/OBSEABanner.png">
+    <img class="OBSEABanner" src="/visortemporal3DMSM/Assets/icatmar-mini-logo.svg">
   </div>
 </template>
 
@@ -89,14 +89,14 @@ export default {
   }
 
   .OBSEABanner {
-    width: 230px;
+    width: 80px;
     position:absolute;
     top: 10px;
     left: 10px;
   }
   @media screen and (max-width: 800px) {
     .OBSEABanner {
-      width: 150px;
+      width: 40px;
     }
   }
 </style>

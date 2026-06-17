@@ -222,8 +222,8 @@ class SceneManager{
 
     // Create image logo
     let expObseaImg = document.createElement("img");
-    expObseaImg.src = "/visortemporal3DMSM/Assets/OBSEABanner.png";
-    expObseaImg.style['max-width'] = '40vw';
+    expObseaImg.src = "/visortemporal3DMSM/Assets/icatmar-mini-logo.svg";
+    expObseaImg.style['max-width'] = '20vw';
     expObseaImg.style['max-height'] = '130px';//'18%';
 
     // Create progress bar
@@ -247,7 +247,7 @@ class SceneManager{
     // Create sponsors logos
     let sponsorsImg = document.createElement("img");
     sponsorsImg.src = "/visortemporal3DMSM/img/Logos.png";
-    sponsorsImg.style['max-width'] = '100%';
+    sponsorsImg.style['max-width'] = '90%';
     sponsorsImg.style['max-height'] = '20%';
     sponsorsImg.style.bottom = '10px';
     sponsorsImg.style.position = 'absolute';
