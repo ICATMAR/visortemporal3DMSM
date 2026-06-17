@@ -24,6 +24,14 @@ class FlagEntity {
       this.root = gltf.scene;
       this.flagObj = this.root.getObjectByName("Armature");//this.root.children[0];
       this.poleObj = this.root.getObjectByName("Pole");// this.root.children[1];
+
+      // Set flag texture
+      const loader = new THREE.TextureLoader();
+      let texture = loader.load('/visortemporal3DMSM/Assets/Flag/flag.png');
+      texture.encoding = THREE.sRGBEncoding;
+      texture.magFilter = THREE.LinearFilter; //THREE.NearestFilter;
+      texture.flipY = false;
+      this.flagObj.children[0].material.map = texture;
   
       // Fix frustrum culling
       this.flagObj.frustumCulled = false; // Flag
