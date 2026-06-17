@@ -8,7 +8,7 @@ class UPCBuoyEntity {
   constructor(scene, onload){
     // https://www.youtube.com/watch?v=6LA8vEB47Nk&ab_channel=DirkTeucher
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('/visortemporal3DMSM/Assets/UPCBuoy/UPCBuoy.glb', (gltf) => {
+    gltfLoader.load('/visortemporal3DMSM/Assets/UPCBuoy/BuoyMSM.glb', (gltf) => {
       // GLTF scene
       const root = gltf.scene;
       // Fix frustrum culling
@@ -20,14 +20,6 @@ class UPCBuoyEntity {
 
       this.root = root;
 
-      // Move upwards all children objects
-      root.children.forEach(ch => {
-        if (ch.name == 'UPC_textFront')
-          ch.translateZ(-0.3);
-        else
-          ch.translateY(0.3);
-      
-      });
       
       
       scene.add(root);

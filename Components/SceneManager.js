@@ -127,7 +127,7 @@ class SceneManager{
 
     // Flag
     this.flag = new FlagEntity(scene, () => {
-      this.flag.root.position.y = 0.0;
+      this.flag.root.position.y = 2.0;
     });
     
 
