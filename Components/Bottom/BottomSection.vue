@@ -3,7 +3,7 @@
 
     <!-- Bottom icons -->
     <!-- Above water -->
-    <div class="bottom-icons" v-show="!isUnderwater">
+    <div class="bottom-icons">
       <button @click="waveIconClicked" :title="$i18n.t('waveButtonTitle')">
         <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
             <path id="Wave" class="svg-wavePath"
@@ -22,56 +22,7 @@
 
       </button>
     </div>
-    <!-- Underwater -->
-    <div class="bottom-icons" v-show="isUnderwater">
-      <button @click="cameraButtonClicked">
-        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-          <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1"
-            d="M209.385,243.21H396a10,10,0,0,1,10,10V355.955a10,10,0,0,1-10,10H209.385a10,10,0,0,1-10-10V253.21A10,10,0,0,1,209.385,243.21Z" />
-          <path class="cls-1" d="M100,225.5l98.968,44.811v63.764L101.62,373.99Z" />
-          <circle class="cls-2" cx="242.078" cy="190" r="55.047" />
-          <circle class="cls-2" cx="352.953" cy="190" r="55.047" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- Underwater camera -->
-    <camera-youtube v-show="showCamera"></camera-youtube>
-
-    <!-- Show/Hide data bar button-->
-    <div class="bottom-icons" :class="showDataBar ? 'dataBarContainerOn' : ''">
-
-      <!-- External link-->
-      <button v-show="showDataBar" @click="externalLinkButtonClicked" :title="$i18n.t('externalLinkButton')">
-        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="-128 -128 768 768">
-          <path class="externalLink1" d="M254,87H63V446H423V261" />
-          <path class="externalLink2"
-            d="M244.261,247.638l155.1-155.276L344.774,60.889c42.943,8.955,78.55.356,117.958-13.66-14.537,38.916-20.81,74.931-13.626,118.109l-32.423-56.1L261.348,264.745Z" />
-        </svg>
-      </button>
-
-      <!-- Show/Hide measures-->
-      <button @click="dataBarButtonClicked" ref="dataBarButton" class="dataBarButton" :class="showDataBar ? 'dataBarButtonOn' : ''" :title="$i18n.t('measuresButton')">
-        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-          <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="meter-1"
-            d="M411,180c48.294,61.225,52.951,127.51,3,208a10,10,0,0,1-10,10H108a10,10,0,0,1-10-10c-49.951-80.49-45.294-146.775,3-208C174.661,86.616,337.339,86.616,411,180Z" />
-          <path class="meterArrow"
-            d="M272.717,391.993L225.1,274.9c-3.683,5.536-7.734,10.417-10.349,9.664-3.565-1.026-2.839-12.053-2.277-20.454,0.707-10.548,1.185-21.149,1.474-32.106q11.97,11.724,23.86,22.77c6.46,5.992,14.888,13.879,12.892,16.991-1.5,2.342-8.4,1.187-15.4-.7l47.687,117.273Z" />
-          <path class="meter-3"
-            d="M84.052,348.56l-4.1-9.12,40-18,4.1,9.12Zm0,0-4.1-9.12,40-18,4.1,9.12ZM76.075,229.818l2.89-9.573,41.992,12.676-2.89,9.573Zm0,0,2.89-9.573,41.992,12.676-2.89,9.573Zm74.194-87.382,8.331-5.531,24.263,36.542-8.331,5.531-2.8-4.222Q161,158.6,150.269,142.436Zm0,0,8.331-5.531,24.263,36.542-8.331,5.531ZM84.052,348.56l-4.1-9.12,40-18,4.1,9.12ZM76.075,229.818l2.89-9.573,41.992,12.676-2.89,9.573Zm74.194-87.382,8.331-5.531,24.263,36.542-8.331,5.531ZM428,349l4.111-9.134-40.071-18.029-4.111,9.134Zm0,0,4.111-9.134-40.071-18.029-4.111,9.134Zm7.991-118.934-2.895-9.589-42.066,12.7,2.9,9.589Zm0,0-2.895-9.589-42.066,12.7,2.9,9.589Zm-74.325-87.524L353.318,137l-24.306,36.6,8.346,5.54,2.808-4.229Zm0,0L353.318,137l-24.306,36.6,8.346,5.54ZM428,349l4.111-9.134-40.071-18.029-4.111,9.134Zm7.991-118.934-2.895-9.589-42.066,12.7,2.9,9.589Zm-74.325-87.524L353.318,137l-24.306,36.6,8.346,5.54ZM250,115h10v43H250V115Z" />
-        </svg>
-      </button>
-    </div>
-
-
-    <!-- Time Range Bar -->
-    <Transition><!-- Vue transition -->
-      <time-range-bar v-show="showDataBar"></time-range-bar>
-    </Transition>
-      <!-- Current information available (temp, etc...)-->
-    <Transition>
-      <data-ticker v-show="showDataBar"></data-ticker>
-    </Transition>
+   
 
   </div>
 </template>
