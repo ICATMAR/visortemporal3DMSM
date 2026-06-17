@@ -22,7 +22,10 @@
 
 
     <!-- OBSEA Title -->
-    <img class="OBSEABanner" src="/visortemporal3DMSM/Assets/icatmar-mini-logo.svg">
+     <a href="https://www.icatmar.cat" target="_blank" >
+      <img class="OBSEABanner" src="/visortemporal3DMSM/Assets/icatmar-mini-logo.svg">
+    </a>
+
   </div>
 </template>
 
