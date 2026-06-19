@@ -110,20 +110,20 @@ class SceneManager{
     // Skybox
     this.skybox = new SkyboxEntity(scene);
     // Sand
-    this.sand = new SandEntity(scene);
+    //this.sand = new SandEntity(scene);
     // Ocean
     this.ocean = new OceanEntity(scene);
     // OBSEA Buoy
-    this.buoy1 = new OBSEABuoyEntity(scene, () => this.buoy1.root.visible = false);
+    //this.buoy1 = new OBSEABuoyEntity(scene, () => this.buoy1.root.visible = false);
     this.buoy2 = new UPCBuoyEntity(scene, ()=> this.buoy2.root.visible = true);
     this.obseaBuoy = this.buoy2;
     //this.obseaBuoy = new UPCBuoyEntity(scene);
     // OBSEA Base
-    this.obseaBase = new OBSEAStationEntity(scene);
+    //this.obseaBase = new OBSEAStationEntity(scene);
     // OBSEA Biotop
-    this.obseaBiotop = new OBSEABiotopEntity(scene);
+    //this.obseaBiotop = new OBSEABiotopEntity(scene);
     // OBSEA Crawler
-    this.obseaCrawler = new OBSEACrawlerEntity(scene);
+    //this.obseaCrawler = new OBSEACrawlerEntity(scene);
 
     // Flag
     this.flag = new FlagEntity(scene, () => {
@@ -136,16 +136,16 @@ class SceneManager{
     this.rosaVents.root.position.y = 3.7;
     
     // Sea velocity, currents
-    this.currents = new CurrentEntity(scene);
+    //this.currents = new CurrentEntity(scene);
 
 
 
     // SCENE TEXT
     // SURFACE
     // Wind text mesh
-    this.windText = new TextMeshEntity(scene, "", 0.2, 0x000000, () => {
-      this.windText.textObj.position.y = 5.5;
-    });
+    // this.windText = new TextMeshEntity(scene, "", 0.2, 0x000000, () => {
+    //   this.windText.textObj.position.y = 5.5;
+    // });
     // Orientation text meshes
     this.Ntext = new TextMeshEntity(scene, "N", 0.4, 0xff0000, () => {
       this.Ntext.textObj.rotation.x = -Math.PI / 2;
@@ -159,14 +159,14 @@ class SceneManager{
     });
     // BOTTOM
     // Temperature text
-    this.tempText = new TextMeshEntity(scene, "16º C", 0.25, 0x000000, () => {
-      this.tempText.textObj.rotation.x = -Math.PI / 2;
-      this.tempText.textObj.position.set(3, -19.35, 0);
-    });
-    this.salText = new TextMeshEntity(scene, "37.8 psu", 0.25, 0x000000, () => {
-      this.salText.textObj.rotation.x = -Math.PI / 2;
-      this.salText.textObj.position.set(3, -19.35, 0.5);
-    });
+    // this.tempText = new TextMeshEntity(scene, "16º C", 0.25, 0x000000, () => {
+    //   this.tempText.textObj.rotation.x = -Math.PI / 2;
+    //   this.tempText.textObj.position.set(3, -19.35, 0);
+    // });
+    // this.salText = new TextMeshEntity(scene, "37.8 psu", 0.25, 0x000000, () => {
+    //   this.salText.textObj.rotation.x = -Math.PI / 2;
+    //   this.salText.textObj.position.set(3, -19.35, 0.5);
+    // });
     // Potential salinity
 
     // OBSEA Data
