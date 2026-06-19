@@ -1,5 +1,5 @@
 import OBSEADataTypes from "/visortemporal3DMSM/data/OBSEADataTypes.js";
-import OBSEADailyDataMax from "/visortemporal3DMSM/data/StaticData/OBSEADailyDataMax.js"
+// import OBSEADailyDataMax from "/visortemporal3DMSM/data/StaticData/OBSEADailyDataMax.js"
 
 // // https://data.obsea.es/api/Datastreams(27)/Observations?$select=resultTime,result&$top=1000000&$filter=resultQuality/qc_flag eq 1 and resultTime ge 2021-01-01T00:00:00z and resultTime lt 2022-01-01T00:00:00z&$orderBy=resultTime asc
 
@@ -7,7 +7,7 @@ import OBSEADailyDataMax from "/visortemporal3DMSM/data/StaticData/OBSEADailyDat
 export class OBSEADataRetriever{
 
   
-  DailyDataMax = OBSEADailyDataMax;
+  //DailyDataMax = OBSEADailyDataMax;
   DataTypes = OBSEADataTypes;
   Measures = ["TEMP", "PSAL", "AIRT", "Hm0", "H3", "H10", "Hmax", "Spr1", "Mdir", "WDIR", "WSPD", "UCUR_0m", "VCUR_0m", "ZCUR_0m", "UCUR_1m", "VCUR_1m", "ZCUR_1m", "UCUR_2m", "VCUR_2m", "ZCUR_2m", "UCUR_3m", "VCUR_3m", "ZCUR_3m", "UCUR_4m", "VCUR_4m", "ZCUR_4m", "UCUR_5m", "VCUR_5m", "ZCUR_5m", "UCUR_6m", "VCUR_6m", "ZCUR_6m", "UCUR_7m", "VCUR_7m", "ZCUR_7m", "UCUR_8m", "VCUR_8m", "ZCUR_8m", "UCUR_9m", "VCUR_9m", "ZCUR_9m", "UCUR_10m", "VCUR_10m", "ZCUR_10m", "UCUR_11m", "VCUR_11m", "ZCUR_11m", "UCUR_12m", "VCUR_12m", "ZCUR_12m", "UCUR_13m", "VCUR_13m", "ZCUR_13m", "UCUR_14m", "VCUR_14m", "ZCUR_14m", "UCUR_15m", "VCUR_15m", "ZCUR_15m", "UCUR_16m", "VCUR_16m", "ZCUR_16m", "UCUR_17m", "VCUR_17m", "ZCUR_17m", "UCUR_18m", "VCUR_18m", "ZCUR_18m", "UCUR_19m", "VCUR_19m", "ZCUR_19m"];
   
@@ -188,6 +188,7 @@ export class OBSEADataRetriever{
 
   // Load all files
   fetchFromStaticFiles = function(callback){
+    return;
 
     for (let i = 0; i<this.staticFiles.length; i++){
       let url = this.baseURLStaticFiles;
@@ -345,6 +346,7 @@ export class OBSEADataRetriever{
   // Generate daily data availability image
   // In principle this script is exectued for the generation of a static JSON file that will be loaded here or in DataManager
   generateDailyDataAvailabilityJSON(csv) {
+    return;
     const header = csv[0];
     const measures = header.slice(1, header.length); // All measures without timestamp //['Hm0', 'WSPD', 'UCUR_0m'];
     let measureIndices = [];

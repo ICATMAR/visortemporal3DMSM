@@ -41,7 +41,7 @@ class DataManager{
     // this.getDataOnTimeInstant('Air temperature', nowDate.toISOString());
     // this.getDataOnTimeInstant('Sea bottom temperature', nowDate.toISOString());
     // this.getDataOnTimeInstant('Salinity', nowDate.toISOString());
-
+    return;
     // Automated data loading from API
     // Get lastest date
     let timeKeys = Object.keys(this.OBSEADataRetriever.DailyDataMax);
