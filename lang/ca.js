@@ -44,42 +44,21 @@ export default ca = {
   infoPanel: {
     title: "Sobre l'aplicació",
     p1: `Aquesta aplicació és una simulació en 3D de les condicions meteorològiques i oceanogràfiques 
-    de l'observatori del fons marí OBSEA. La simulació es basa en les dades recollides per l'observatori.
-     L'objectiu d'aquesta aplicació és transferir el coneixement i la informació adquirida 
-    per l'observatori. Aquesta aplicació està sent desenvolupada per la
+    de les boies MSM. L'objectiu d'aquesta aplicació és transferir el coneixement i la informació adquirida 
+    per les boies. Aquesta aplicació està sent desenvolupada per en Gerard Llorach-Tó, investigador de l'ICATMAR i l'Institut de Ciències del mar (ICM-CSIC) de Barcelona.
         `,
-    p1_1: `en col·laboració amb l'`,
-    BlueNetCat: 'Xarxa Marítima de Catalunya (BlueNetCat)',
-    OBSEA_UPC: 'OBSEA de la Universitat Politècnica de Catalunya (UPC)',
-    p1_2: `. Agraïments sincers al Grup de les Tecnologies de la Interacció (GTI) de la Universitat Pompeu Fabra pel
-    suport tècnic i a l'Emilio García per les consultes teòriques. El codi de l'aplicació es pot trobar al `,
+    p1_2: `. El codi de l'aplicació es pot trobar al `,
     github: `repositori github.`,
 
-    aboutObsea: `Sobre l'OBSEA`,
-    p2: `De la pàgina web de l'OBSEA: "La investigació marina requereix cada dia més informació mediambiental, 
-    amb millors resolucions temporals i sèries més llargues. Els mètodes tradicionals no són adequats per 
-    ecosistemes marins amb dinàmiques molt lentes, amb l'adquisició continua de dades durant llargs períodes 
-    és possible detectar canvis climàtics a la vegada que esdeveniments singulars.`,
-    p2_1: `OBSEA és un observatori submarí cablejat a uns 4 km de la costa de Vilanova i la Geltrú a 
-    la zona protegida de pesca, i interconnectat a la costa per un cable mixt d'energia i comunicacions. 
-    L'avantatge principal de disposar d'un observatori cablejat és la de poder proporcionar energia als 
-    instruments científics i disposar d'un enllaç de comunicació de banda ampla. D'aquesta manera es pot 
-    tenir informació en temps real i s'eviten els inconvenients dels sistemes alimentats amb bateries. La 
-    solució adoptada és la implementació d'una xarxa ethernet òptica que transmet contínuament les dades dels
-     instruments oceanogràfics connectats a l'observatori. Amb l'OBSEA es pot realitzar una observació 
-     en temps real de múltiples paràmetres del medi marí. Des de l'estació terrestre es proporciona 
-     l'alimentació pels dispositius i l'enllaç de fibra òptica per les comunicacions a la vegada que es
-      fa la gestió d'alarmes i s'emmagatzemen les dades. Amb un tram d'uns 1000 metres de cable terrestre 
-      es connecta amb l'arqueta d'ancoratge, punt on el cable submarí inicia el seu recorregut fins la
-       ubicació del node a uns 4 km de la costa i a uns 20 metres de profunditat."`,
+    aboutObsea: `Sobre les boies MSM`,
+    p2: `Aquestes boies estan instal·lades a diferents punts de la costa catalana. Recullen dades d'onatge, vent, corrents, temperatura i salinitat de l'aigua.
+    En el mapa podeu veure la ubicació de les boies.`,
 
     contact: "Contacte",
-    p3: `Per a consultes sobre l'aplicació, poseu-vos en contacte amb Gerard Llorach (gllorach at bluenetcat.eu).
-      Per a consultes sobre les dades, poseu-vos en contacte amb Enoc Martínez (enoc.martinez at upc.edu ).`,
+    p3: `Per a consultes sobre l'aplicació, poseu-vos en contacte amb Gerard Llorach-Tó <gerard.llorach at csic.es>. Per preguntes sobre les boies MSM, poseu-vos en contacte amb <observacions at icatmar.cat>.`,
 
     funding: "Finançament",
-    p4: `La Xarxa Marítima de Catalunya (BlueNetCat) està finançada per 
-    la Generalitat de Catalunya i pel Fons Europeu de Desenvolupament Regional (FEDER).`,
+    p4: `L'ICATMAR està finançat per la Generalitat de Catalunya i el CSIC a través del Fons Europeu Marítim, de Pesca i d'Aqüicultura (FEMPA) - BOE-A-2023-25106.`,
 
   },
 
