@@ -40,6 +40,7 @@ export class OBSEADataRetriever{
   }
 
   getDataOnTimeInstant = async function(dataTypeName, timestamp){
+    return;
     // Find data type
     let dataType = this.getDataType(dataTypeName);
     if (dataType == undefined)
@@ -106,6 +107,7 @@ export class OBSEADataRetriever{
 
   // Query a data stream on a time instant
   fetchFromDatastreamURL = async function(url, timestamp){
+    return;
     // Observations
     url += '/Observations?';
     // Select the timestamp and the result
@@ -147,6 +149,7 @@ export class OBSEADataRetriever{
 
   // Query a datastream on a time period
   fetchFromAPI = function (dataTypeURL, startDate, endDate) {
+    return;
     let url = dataTypeURL;
     // Observations
     url += '/Observations?';
